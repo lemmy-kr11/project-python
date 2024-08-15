@@ -12,7 +12,7 @@ def home():
 def saludo():
     return jsonify({"mensaje": "Hello"})
 
-# Ruta para enviar datos a la API
+# Ruta para enviar datos a la API.
 @app.route('/api/echo', methods=['POST'])
 def echo():
     data = request.json
